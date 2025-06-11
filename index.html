@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Auth Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <div class="mode-selector">
+      <button onclick="switchMode('email')">Email</button>
+      <button onclick="switchMode('username')">Username</button>
+      <button onclick="switchMode('phone')">Phone</button>
+    </div>
+
+    <form id="loginForm" onsubmit="return handleLogin(event)">
+      <div id="emailField" class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email">
+      </div>
+
+      <div id="usernameField" class="input-group hidden">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+      </div>
+
+      <div id="phoneField" class="input-group hidden">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" placeholder="Enter phone number">
+      </div>
+
+      <div id="passwordField" class="input-group">
+        <label for="password">Password / OTP</label>
+        <input type="password" id="password" placeholder="Enter password or OTP">
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+      <p id="message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

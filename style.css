@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #53a6e0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #063970; 
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #c0d1e1;
+}
+
+.mode-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 6px;
+}
+
+.mode-selector button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #cfd8dc;
+  color: #000;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mode-selector button.active,
+.mode-selector button:hover {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f44336;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #d7382a;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  margin-top: 14px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+input[type="checkbox"] {
+  transform: scale(1.1);
+  margin-right: 6px;
+}
